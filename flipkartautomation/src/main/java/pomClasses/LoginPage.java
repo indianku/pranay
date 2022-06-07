@@ -14,7 +14,7 @@ public class LoginPage {
 	public void enterUser() {user.sendKeys("7709395679");}
 	public void enterPassword() {password.sendKeys("pra13nay");}
 	public void selectLogin() {login.click();}
-	//public void enterUser() {user.sendKeys("7709395679");}
+	public void enterUs() {user.sendKeys("7709395679");}
 	
 	
 	
