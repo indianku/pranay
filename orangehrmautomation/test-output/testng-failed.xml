@@ -4,24 +4,12 @@
   <test thread-count="5" name="ChromeBrowser(failed)">
     <parameter name="browserName" value="chrom"/>
     <classes>
-      <class name="testClass.VerifyOrange">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="test"/>
-          <include name="logOutFromApplication"/>
-          <include name="closebrowser"/>
-          <include name="creatObjectOfPOMclass"/>
-          <include name="loginToApplication"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- testClass.VerifyOrange -->
       <class name="testClass.VerifyDirectory">
         <methods>
           <include name="loginToApplication"/>
           <include name="logOutFromApplication"/>
           <include name="closeBrowser"/>
           <include name="verifydirectory"/>
-          <include name="verifyTime"/>
           <include name="creatObjectOfPOMclass"/>
           <include name="openBrowser"/>
           <include name="closebrowser"/>

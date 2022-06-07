@@ -1,5 +1,7 @@
 package testClass;
 
+import static org.testng.Assert.fail;
+
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -82,7 +84,7 @@ public class VerifyOrange {
 		    loginpage.login();
              
 		}
-		@Test
+		@Test       //(invocation count=4)
 		public void test()
 		{   
 		String url=driver.getCurrentUrl();

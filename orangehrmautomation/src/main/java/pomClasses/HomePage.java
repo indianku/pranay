@@ -54,17 +54,17 @@ public class HomePage {
 	{
 		time.click();
 	}
-public void selectwelcome()
-{
+    public void selectwelcome()
+   {
 	welcome.click();
 	
-}
-public void selectlogout()
-{
+    }
+   public void selectlogout()
+    {
 	logout.click();	
-}
+     }
 	
 	
-}
+      }
 
 

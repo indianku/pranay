@@ -4,7 +4,7 @@
    <test thread-count="5" name="ChromeBrowser">
 		 <parameter name="browserName" value="chrom"></parameter>
 		     <classes>
-		      <class name="testClass.VerifyDirectory"></class>
+		      <class name="testClass.VerifyDirectory"/>
 		       <class name="testClass.VerifyOrange"/>
 		     </classes>
 		   </test> <!-- Test -->

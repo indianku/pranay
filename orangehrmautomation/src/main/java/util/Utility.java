@@ -38,9 +38,10 @@ public class Utility {
 		String data;
 		
 		//String path="C:\\Users\\PRANAY\\Desktop\\testng.xlsx";
-		String path=".\\src\\test\\resources\\browser\\testng.xlsx";
+	String path=".\\src\\test\\resources\\testng.xlsx";
+		//String path="orangehrmautomation//src/test//resources//testng.xlsx";
 		FileInputStream file=new FileInputStream(path);
-	Workbook book=WorkbookFactory.create(file);
+	    Workbook book=WorkbookFactory.create(file);
 //		Sheet sheet=book.getSheet(sheetName);
 //		 Row rows=sheet.getRow(row);
 //		Cell  cells=rows.getCell(cell);
