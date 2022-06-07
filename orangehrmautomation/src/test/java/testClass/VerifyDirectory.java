@@ -1,5 +1,7 @@
 package testClass;
 
+import static org.testng.Assert.fail;
+
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
@@ -93,8 +95,8 @@ public class VerifyDirectory {
 	  // directory=new Directory(driver);  
 	   directory.enterName();
 	   directory.selectJobTitle();
-	   Thread.sleep(2000);
-	 //  directory.enterLocation();
+	   //Thread.sleep(2000);
+	 // directory.enterLocation();
 	   directory.selectSearch();
 	   soft.assertAll();
 	    }
@@ -115,6 +117,7 @@ public class VerifyDirectory {
 		 timePage.selectEmp();
 		 timePage.selectView();
 		 soft.assertAll();
+		// Assert.fail();
 			
 		}
 		@AfterMethod

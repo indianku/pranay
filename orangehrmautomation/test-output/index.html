@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-skipped">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\PRANAY\eclipse-workspace\orangehrmautomation\testng.xml</span>
+                    <span>C:\Users\PRANAY\git\pranay\orangehrmautomation\test.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,31 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,  3 skipped,  </span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testClass.VerifyOrange" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testClass.VerifyDirectory" class="method navigator-link" hash-for-method="verifyTime">verifyTime</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testClass.VerifyDirectory" class="method navigator-link" hash-for-method="verifydirectory">verifydirectory</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -129,77 +119,36 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-skipped">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">testClass.VerifyOrange</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="test">
-                  </a> <!-- test -->
-                  <span class="method-name">test</span>
-                  <div class="stack-trace">java.io.FileNotFoundException: .\src\test\resources\browser\testng.xlsx (The system cannot find the file specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
-	at util.Utility.getexclesheetdata(Utility.java:42)
-	at testClass.VerifyOrange.loginToApplication(VerifyOrange.java:76)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testClass.VerifyDirectory</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyTime">
-                  </a> <!-- verifyTime -->
-                  <span class="method-name">verifyTime</span>
-                  <div class="stack-trace">java.io.FileNotFoundException: .\src\test\resources\browser\testng.xlsx (The system cannot find the file specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
-	at util.Utility.getexclesheetdata(Utility.java:42)
-	at testClass.VerifyDirectory.loginToApplication(VerifyDirectory.java:67)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="verifydirectory">
                   </a> <!-- verifydirectory -->
                   <span class="method-name">verifydirectory</span>
-                  <div class="stack-trace">java.io.FileNotFoundException: .\src\test\resources\browser\testng.xlsx (The system cannot find the file specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
-	at util.Utility.getexclesheetdata(Utility.java:42)
-	at testClass.VerifyDirectory.loginToApplication(VerifyDirectory.java:67)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate element with text: New York Sales Office
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PC&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at pomClasses.Directory.enterLocation(Directory.java:39)
+	at testClass.VerifyDirectory.verifydirectory(VerifyDirectory.java:99)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-failed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\PRANAY\eclipse-workspace\orangehrmautomation\testng.xml</span>
+            <span class="header-content">C:\Users\PRANAY\git\pranay\orangehrmautomation\test.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -209,8 +158,11 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;ChromeBrowser&quot;&gt;
     &lt;parameter name=&quot;browserName&quot; value=&quot;chrom&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testClass.VerifyDirectory&quot;/&gt;
-      &lt;class name=&quot;testClass.VerifyOrange&quot;/&gt;
+      &lt;class name=&quot;testClass.VerifyDirectory&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifydirectory&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testClass.VerifyDirectory --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ChromeBrowser --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -224,7 +176,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">ChromeBrowser (2 classes)</span>
+                <span class="test-name">ChromeBrowser (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -250,24 +202,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test')
-data.setCell(0, 2, 'testClass.VerifyOrange')
-data.setCell(0, 3, 0);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyTime')
-data.setCell(1, 2, 'testClass.VerifyDirectory')
-data.setCell(1, 3, 0);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifydirectory')
-data.setCell(2, 2, 'testClass.VerifyDirectory')
-data.setCell(2, 3, 0);
+data.setCell(0, 1, 'verifydirectory')
+data.setCell(0, 2, 'testClass.VerifyDirectory')
+data.setCell(0, 3, 13452);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -282,9 +226,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testClass.VerifyDirectory</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyTime</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -298,88 +249,31 @@ return data;
                 <span class="method-name">openBrowser(chrom)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testClass.VerifyOrange</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">openBrowser(chrom)</span>
-                <span class="method-start">2413 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testClass.VerifyDirectory</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">creatObjectOfPOMclass</span>
-                <span class="method-start">4419 ms</span>
+                <span class="method-start">2766 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
+                <span class="method-name">loginToApplication</span>
+                <span class="method-start">2820 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">loginToApplication</span>
-                <span class="method-start">4472 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyTime</span>
-                <span class="method-start">10722 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logOutFromApplication</span>
-                <span class="method-start">10732 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">loginToApplication</span>
-                <span class="method-start">10734 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <span class="method-name">verifydirectory</span>
-                <span class="method-start">10737 ms</span>
+                <span class="method-start">16082 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">logOutFromApplication</span>
-                <span class="method-start">10747 ms</span>
+                <span class="method-name">logOutFromApplication([TestResult name=verifydirectory status=FAILURE method=VerifyDirectory.verifydirectory()[pri:0, inst...)</span>
+                <span class="method-start">29552 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">10750 ms</span>
+                <span class="method-start">31626 ms</span>
               </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testClass.VerifyOrange</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">creatObjectOfPOMclass</span>
-                <span class="method-start">10754 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">loginToApplication</span>
-                <span class="method-start">10759 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test</span>
-                <span class="method-start">17737 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logOutFromApplication</span>
-                <span class="method-start">17751 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">closebrowser</span>
-                <span class="method-start">17753 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testClass.VerifyDirectory</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">17758 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testClass.VerifyOrange</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">17765 ms</span>
+                <span class="method-start">31630 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
