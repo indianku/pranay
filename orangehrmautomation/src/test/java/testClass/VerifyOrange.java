@@ -2,6 +2,7 @@ package testClass;
 
 import static org.testng.Assert.fail;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -19,6 +20,10 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import Base.Base;
 import pomClasses.HomePage;
 import pomClasses.LoginPage;
@@ -32,12 +37,15 @@ public class VerifyOrange {
 	LoginPage loginpage;
     HomePage homepage;
     int row=1;
-    
-    
-        @Parameters("browserName")
+    static ExtentTest test;
+	static ExtentHtmlReporter reporter;
         @BeforeTest
+        @Parameters("browserName")
 		public void openBrowser(String browser) throws InterruptedException
-		{
+		{reporter = new ExtentHtmlReporter("test-output"+File.separator+"ExtendReport"+File.separator+"extendReport.html");
+		ExtentReports extend = new ExtentReports();
+		extend.attachReporter(reporter);
+		System.out.println("Before Test");
 
 		 if(browser.equals("chrom"))
 			{ 

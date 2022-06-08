@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-07T14:19:54 IST" name="Suite" finished-at="2022-06-07T14:20:26 IST" duration-ms="31807">
+  <suite started-at="2022-06-08T00:39:53 IST" name="Suite" finished-at="2022-06-08T00:40:59 IST" duration-ms="65551">
     <groups>
     </groups>
-    <test started-at="2022-06-07T14:19:54 IST" name="ChromeBrowser" finished-at="2022-06-07T14:20:26 IST" duration-ms="31807">
-      <class name="testClass.VerifyDirectory">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testClass.VerifyDirectory@31d7b7bf]" started-at="2022-06-07T14:19:54 IST" name="openBrowser" finished-at="2022-06-07T14:19:57 IST" duration-ms="2749" status="PASS">
+    <test started-at="2022-06-08T00:39:53 IST" name="ChromeBrowser" finished-at="2022-06-08T00:40:59 IST" duration-ms="65551">
+      <class name="testClass.VerifyOrange">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testClass.VerifyOrange@28eaa59a]" started-at="2022-06-08T00:39:56 IST" name="openBrowser" finished-at="2022-06-08T00:39:58 IST" duration-ms="1518" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,82 +18,97 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="creatObjectOfPOMclass()[pri:0, instance:testClass.VerifyDirectory@31d7b7bf]" started-at="2022-06-07T14:19:57 IST" name="creatObjectOfPOMclass" finished-at="2022-06-07T14:19:57 IST" duration-ms="39" status="PASS">
+        <test-method is-config="true" signature="creatObjectOfPOMclass()[pri:0, instance:testClass.VerifyOrange@28eaa59a]" started-at="2022-06-08T00:40:38 IST" name="creatObjectOfPOMclass" finished-at="2022-06-08T00:40:38 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- creatObjectOfPOMclass -->
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:testClass.VerifyDirectory@31d7b7bf]" started-at="2022-06-07T14:19:57 IST" name="loginToApplication" finished-at="2022-06-07T14:20:10 IST" duration-ms="13261" status="PASS">
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:testClass.VerifyOrange@28eaa59a]" started-at="2022-06-08T00:40:38 IST" name="loginToApplication" finished-at="2022-06-08T00:40:49 IST" duration-ms="11325" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method signature="verifydirectory()[pri:0, instance:testClass.VerifyDirectory@31d7b7bf]" started-at="2022-06-07T14:20:10 IST" name="verifydirectory" finished-at="2022-06-07T14:20:23 IST" duration-ms="13452" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Cannot locate element with text: New York Sales Office
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PC', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: driver.version: unknown]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: New York Sales Office
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PC', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
-at pomClasses.Directory.enterLocation(Directory.java:39)
-at testClass.VerifyDirectory.verifydirectory(VerifyDirectory.java:99)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="test()[pri:0, instance:testClass.VerifyOrange@28eaa59a]" started-at="2022-06-08T00:40:49 IST" name="test" finished-at="2022-06-08T00:40:57 IST" duration-ms="7117" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifydirectory -->
-        <test-method is-config="true" signature="logOutFromApplication(org.testng.ITestResult)[pri:0, instance:testClass.VerifyDirectory@31d7b7bf]" started-at="2022-06-07T14:20:23 IST" name="logOutFromApplication" finished-at="2022-06-07T14:20:25 IST" duration-ms="2072" status="PASS">
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="logOutFromApplication(org.testng.ITestResult)[pri:0, instance:testClass.VerifyOrange@28eaa59a]" started-at="2022-06-08T00:40:57 IST" name="logOutFromApplication" finished-at="2022-06-08T00:40:58 IST" duration-ms="1773" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifydirectory status=FAILURE method=VerifyDirectory.verifydirectory()[pri:0, instance:testClass.VerifyDirectory@31d7b7bf] output={null}]]]>
+                <![CDATA[[TestResult name=test status=SUCCESS method=VerifyOrange.test()[pri:0, instance:testClass.VerifyOrange@28eaa59a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:testClass.VerifyDirectory@31d7b7bf]" started-at="2022-06-07T14:20:25 IST" name="closebrowser" finished-at="2022-06-07T14:20:25 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:testClass.VerifyOrange@28eaa59a]" started-at="2022-06-08T00:40:58 IST" name="closebrowser" finished-at="2022-06-08T00:40:58 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testClass.VerifyDirectory@31d7b7bf]" started-at="2022-06-07T14:20:25 IST" name="closeBrowser" finished-at="2022-06-07T14:20:26 IST" duration-ms="168" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testClass.VerifyOrange@28eaa59a]" started-at="2022-06-08T00:40:59 IST" name="closeBrowser" finished-at="2022-06-08T00:40:59 IST" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testClass.VerifyOrange -->
+      <class name="testClass.VerifyDirectory">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testClass.VerifyDirectory@39529185]" started-at="2022-06-08T00:39:53 IST" name="openBrowser" finished-at="2022-06-08T00:39:56 IST" duration-ms="2936" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrom]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="creatObjectOfPOMclass()[pri:0, instance:testClass.VerifyDirectory@39529185]" started-at="2022-06-08T00:39:58 IST" name="creatObjectOfPOMclass" finished-at="2022-06-08T00:39:58 IST" duration-ms="67" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatObjectOfPOMclass -->
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:testClass.VerifyDirectory@39529185]" started-at="2022-06-08T00:39:58 IST" name="loginToApplication" finished-at="2022-06-08T00:40:14 IST" duration-ms="16417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method signature="verifyTime()[pri:0, instance:testClass.VerifyDirectory@39529185]" started-at="2022-06-08T00:40:14 IST" name="verifyTime" finished-at="2022-06-08T00:40:17 IST" duration-ms="3037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTime -->
+        <test-method is-config="true" signature="logOutFromApplication(org.testng.ITestResult)[pri:0, instance:testClass.VerifyDirectory@39529185]" started-at="2022-06-08T00:40:17 IST" name="logOutFromApplication" finished-at="2022-06-08T00:40:19 IST" duration-ms="1883" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTime status=SUCCESS method=VerifyDirectory.verifyTime()[pri:0, instance:testClass.VerifyDirectory@39529185] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromApplication -->
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:testClass.VerifyDirectory@39529185]" started-at="2022-06-08T00:40:19 IST" name="loginToApplication" finished-at="2022-06-08T00:40:25 IST" duration-ms="6116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method signature="verifydirectory()[pri:0, instance:testClass.VerifyDirectory@39529185]" started-at="2022-06-08T00:40:25 IST" name="verifydirectory" finished-at="2022-06-08T00:40:36 IST" duration-ms="11066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifydirectory -->
+        <test-method is-config="true" signature="logOutFromApplication(org.testng.ITestResult)[pri:0, instance:testClass.VerifyDirectory@39529185]" started-at="2022-06-08T00:40:36 IST" name="logOutFromApplication" finished-at="2022-06-08T00:40:38 IST" duration-ms="1647" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifydirectory status=SUCCESS method=VerifyDirectory.verifydirectory()[pri:0, instance:testClass.VerifyDirectory@39529185] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromApplication -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:testClass.VerifyDirectory@39529185]" started-at="2022-06-08T00:40:38 IST" name="closebrowser" finished-at="2022-06-08T00:40:38 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testClass.VerifyDirectory@39529185]" started-at="2022-06-08T00:40:58 IST" name="closeBrowser" finished-at="2022-06-08T00:40:59 IST" duration-ms="261" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
